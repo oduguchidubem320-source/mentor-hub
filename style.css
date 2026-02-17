@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -18,14 +17,15 @@ body {
   font-weight: bold;
 }
 
-.navbar nav a {
+.nav-links a {
   color: grey;
   text-decoration: none;
   margin-left: 20px;
   font-size: 16px;
 }
-.navbar nav a:hover {
-    color: azure;
+
+.nav-links a:hover {
+  color: azure;
 }
 
 .login-btn {
@@ -36,6 +36,16 @@ body {
   color: white;               
   display: inline-block;       
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
 
 .hero {
   text-align: center;
@@ -71,27 +81,28 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
-.cta-btn:hover{
-    background-color: cyan;
+.cta-btn:hover {
+  background-color: cyan;
 }
 
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-size: 100%;
+  }
 
-.desktop-menu{
-    background: red;
-    display: block;
-}
+  .nav-links.show {
+    display: flex;
+  }
 
-.nav-button{
-    display: none;
-}
-
-@media screen and (max-width: 420px) {
-    .desktop-menu {
-        display: none;
-        background: green;
-    }
-
-    .nav-button{
-        display: block;
-    }
+  .menu-toggle {
+    display: block; 
+  }
 }
