@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorHub - Find Your Perfect Mentor</title>
+    <link rel="stylesheet" href="./hub.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+      <header class="navbar">
+    <h1 class="logo">MentorHub</h1>
+    <nav>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="./mentor.html">Mentors</a>
+        <a href="./login.html" class="login-btn">Log in</a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1 class="text">Tell us about yourself</h1>
+    <h3 class="text-1">We'll match you with mentors who fit your career goals</h3>
+    <br>
+    <h4 class="text-2">Current role / Job Title</h4>
+    <div class="form">
+    <select>
+        <option value="select-your-role" selected class="select">Select your role</option>
+    </select>
+    </div>
+    <h4 class="text-5">Years of Experience</h4>
+    <div class="years">
+    <input type="number"  min="0" max="50" placeholder="e.g . 2" required>
+    </div>
+    <label class="tools">Tools you use (Select multiple)</label>
+    <label class="tools-2">Interests (Select multiple)</label>
+    <label class="tools-3">Short Bio / Goal</label>
+    <div class="tools-4">
+        <textarea name="" id="" cols="6" placeholder="I want to transition from graphic design to product design"></textarea>
+        <!-- <input type="text" placeholder=""> -->
+    </div>
+    <button type="submit" class="btn">Find Matches</button>
+  </section>
+</body>
+</html>

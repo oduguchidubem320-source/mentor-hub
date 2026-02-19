@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: grey;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: azure;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-size: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+}
+.hero{
+    background-color:#161b22;
+    padding: 10px;
+    align-items: flex-end;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    border:#161b22 solid;
+    justify-content: center;
+}
+.text{
+    margin-bottom: 20px;
+}
+.text-1{
+    color: slategrey;
+}
+.text-2{
+    color:slategrey;
+    margin-right: 330px;
+}
+.text-3{
+    color: slategrey;
+    margin-right: 530px;
+}
+.form >select {
+    background-color: #161b22;;
+    padding: 10px;
+    border-radius: 5px;
+    width: 520px;
+    color: white;
+    border-color:#2563eb;
+}
+.years >input{
+    padding: 10px;
+    background-color: #161b22;
+    color: white;
+    width: 500px;
+    border-color: #161b22;
+    border-radius: 5px;
+}
+.tools{
+    color: slategrey;
+    margin-top: 40px;
+    margin-right:300px;
+}
+.tools-2{
+    color: slategrey;
+    margin-top: 40px;
+    margin-right:330px;
+}
+.tools-3{
+    color: slategrey;
+    margin-top: 40px;
+    margin-right:390px;
+}
+.tools-4 >input , textarea{
+    padding: 30px;
+    background-color: #161b22;
+    width: 450px;
+    border-color: #2563eb;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+.tools-4 > input , textarea::placeholder{
+    color:white;
+}
+.btn{
+    padding: 20px;
+    border-radius: 5px;
+    background-color:#3b82f6;
+    color: azure;
+    border: none;
+    cursor: pointer;
+    width: 515px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    background-color: #2563eb;
+    background-clip: 0.3s;
+}
+.text-5{
+    color: slategrey;
+    margin-right: 350px;
+}

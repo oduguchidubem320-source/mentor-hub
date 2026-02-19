@@ -101,6 +101,7 @@ body {
     border-radius: 5px;
     width: 100%;
     color: white;
+    border-color: #2563eb;
 }
 
 .query-div{
@@ -110,22 +111,25 @@ body {
     gap: 10px;
 }
 .btn-secondary{
-  margin-top: 70px;
-  margin-left: 50px;
+  margin-top: 70px; 
   padding: 10px;
+  margin-left: auto;
   border-radius: 6px;
   background-color: gray;
   color: white;
+  cursor: pointer;
 }
 .btn-tertiary{
   margin-top: 70px;
-  margin-left: 50px;
+  margin-right: auto;
   padding: 10px;
   border-radius: 6px;
+  width: 80px;
 }
 .pages{
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
 }
 .page1{
   margin-top: 75px;
