@@ -1,5 +1,5 @@
-body{
-  background-color:  #0f1115;
+body {
+  background: linear-gradient(135deg, #57c4d0, #deb887, #e313fe);
   font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
@@ -7,32 +7,90 @@ body{
   min-height: 100vh;
   margin: 0;
 }
-.hero{
-  background: linear-gradient(90deg, #0077ff, #9b59b6); 
-  padding: 100px;
-  border-radius: 15px;
+
+.hero {
+  background-color: rgb(81, 36, 171);
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 400px;
   text-align: center;
-  width: 500px;
   color: white;
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 10px;
-  margin-bottom: 12px;
 }
-.input-1{
-    padding: 20px;
-    border-radius: 6px;
-    background: linear-gradient(90deg, #0077ff, #9b59b6); 
+
+.header {
+  margin-bottom: 10px;
 }
-.input-1 >::placeholder {
-    color: white;
+
+.tagline {
+  font-size: 14px;
+  color: #ddd;
+  margin: 4px 0;
 }
-.btn{
-    background-color: #9b59b6;
-    padding: 10px;
-    border-radius: 6px;
-    color: white;
-    border: none;
-    justify-content: center;
-    text-decoration: none;
+
+.login-form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74,144,226,0.4);
+  outline: none;
+}
+
+.btn {
+  display: block;
+  width: 50%;            
+  background-color: blueviolet;
+  padding: 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #357ab8;
+}
+
+.extra {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.extra a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.extra a:hover {
+  text-decoration: underline;
 }
