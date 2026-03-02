@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MentorHub-Find Your Perfect Mentor</title>
     <link rel="stylesheet" href="./mentor.css">
-    <script src="./script.js" defer></script>
+    <script src="./mentor.js" defer></script>
 </head>
 <body>
       <header class="navbar">
@@ -36,9 +36,15 @@
     </div>
   </section>
   <div class="pages">
-    <button class="btn-secondary">Previous</button>
+    <button class="btn-secondary" disabled>Previous</button>
     <p class="page1">Page 1</p>
     <button class="btn-tertiary">Next</button>
   </div>
+  <div id="directory-loading" class="hidden">
+  <div class="spinner">
+      
+  </div>
+</div>
+
 </body>
 </html>

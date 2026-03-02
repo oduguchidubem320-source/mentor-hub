@@ -11,7 +11,7 @@ body {
 .container {
   display: flex;
   width: 90%;
-  background: #111;
+  background: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -20,7 +20,7 @@ body {
 .text-section {
   flex: 1;
   padding: 60px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -30,13 +30,13 @@ body {
 
 .tagline {
   font-size: 16px;
-  color: #ddd;
+  color: black;
   margin: 10px 0;
 }
 
 .form-section {
   flex: 1; 
-  background-color: #fff;
+  background-color:#111;
   padding: 40px;
 }
 
@@ -48,6 +48,11 @@ body {
 .form-row {
   margin-bottom: 18px;
   text-align: left;
+}
+.form-row, p{
+    color: white;
+    font-size: small;
+    margin-bottom: 0%;
 }
 
 label {
@@ -104,7 +109,7 @@ input:focus {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 788px) {
   .container {
     flex-direction: column;
   }
