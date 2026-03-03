@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background: linear-gradient(135deg, #1a1a1a, #333);
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
   margin: 0;
@@ -10,98 +10,118 @@ body {
 
 .container {
   display: flex;
-  width: 90%;
-  background: white;
-  border-radius: 12px;
+  max-width: 950px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
 }
 
 .text-section {
   flex: 1;
-  padding: 60px;
-  color: black;
+  padding: 50px;
+  color: #222;
   text-align: center;
+  border-right: 1px solid #eee;
 }
 
 .header {
-  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #0077ff;
 }
 
 .tagline {
   font-size: 16px;
-  color: black;
-  margin: 10px 0;
+  color: #555;
+  margin: 12px 0;
+  line-height: 1.6;
 }
 
 .form-section {
-  flex: 1; 
-  background-color:#111;
-  padding: 40px;
+  flex: 1;
+  background-color: #111;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .form-row {
-  margin-bottom: 18px;
-  text-align: left;
-}
-.form-row, p{
-    color: white;
-    font-size: small;
-    margin-bottom: 0%;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
   font-weight: 600;
-  color: #444;
+  color: #ddd;
   margin-bottom: 6px;
 }
 
 input {
   padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
 }
 
 input:focus {
-  border-color: #4a90e2;
-  box-shadow: 0 0 6px rgba(74,144,226,0.4);
+  border-color: #9b59b6;
+  box-shadow: 0 0 8px rgba(155,89,182,0.6);
   outline: none;
+}
+
+.form-row p {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 4px;
 }
 
 .btn {
   display: block;
-  width: 100%;            
-  background:linear-gradient(90deg, #0077ff, #9b59b6);
-  padding: 12px;
-  border-radius: 20px;
+  width: 100%;
+  background: linear-gradient(90deg, #0077ff, #9b59b6);
+  padding: 14px;
+  border-radius: 30px;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  text-decoration: none;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
   text-align: center;
 }
 
 .btn:hover {
-  background-color: #357ab8;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(74,144,226,0.6);
 }
 
 .extra {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 13px;
+  color: #bbb;
+  text-align: center;
 }
 
 .extra a {
-    color: #357ab8;
+  color: #4a90e2;
   text-decoration: none;
 }
 
@@ -112,21 +132,14 @@ input:focus {
 @media (max-width: 788px) {
   .container {
     flex-direction: column;
+    max-width: 95%;
   }
-  .text-section, .form-section {
-    flex: none;
-    width: 100%;
+  .text-section {
+    border-right: none;
+    border-bottom: 1px solid #eee;
   }
-}
-.form-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 18px;
-  text-align: left;
-}
-
-label {
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 6px;
+  .form-section {
+    padding: 30px;
+    text-align: center;
+  }
 }

@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MentorHub - Find Your Perfect Mentor</title>
-  <link rel="stylesheet" href="./Register.css">
-  <script src="./Register.js"></script>
+  <link rel="stylesheet" href="Register.css">
 </head>
 <body>
   <div class="container">
+    <!-- Left Section -->
     <div class="text-section">
       <h2 class="header">Register in to MentorHub</h2>
       <p class="tagline">Connect with mentors who understand your goals</p>
@@ -16,8 +16,14 @@
       <p class="tagline">Every Register brings you closer to your perfect mentor</p>
     </div>
 
+    <!-- Right Section -->
     <div class="form-section">
       <form class="login-form" action="login.html">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
         <div class="form-row">
           <label for="email">Email</label>
           <input id="email" type="email" placeholder="Enter your email" required>
@@ -25,13 +31,21 @@
 
         <div class="form-row">
           <label for="password">Password</label>
-          <input id="password" type="password" placeholder="Enter your password" required>
+          <input id="password" type="password" placeholder="Enter your password" required
+            title="Password must include letters, numbers, and symbols, and be at least 6 characters long"
+            pattern="^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&]).{6,}$">
           <p>Password should be at least 6 characters</p>
-        </div>  
+        </div>
+
+        <div class="form-row">
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" type="password" placeholder="Confirm your password" required>
+        </div>
+
         <button class="btn" type="submit">Register</button>
-    </form>
+      </form>
       <p class="extra">New here? <a href="./Register.html" class="create">Create an account</a></p>
     </div>
-    </div>
+  </div>
 </body>
 </html>
