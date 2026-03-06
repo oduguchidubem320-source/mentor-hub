@@ -104,7 +104,7 @@ input:focus {
   font-weight: bold;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s7 ease;
   text-align: center;
 }
 

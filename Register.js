@@ -1,6 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () =>{
+    if(userloginbtn){
 
-    
-
-
+    }
 });
